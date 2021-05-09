@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0; 
+    padding: 0;
+  }
+
+.main-page {
+  width: 100%;
+  height: 1024px;
+  background: url('images/background.jpg') center center/cover no-repeat;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  padding: 24px 110px;
+  justify-content: space-between;
+}
+
+.menu .logo {
+  width: 36px;
+  height: 29px;
+}
+
+.menu .menu-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 525px;
+}
+
+.menu-list a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu .menu-list .menu-list-item {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-wrapper .basket {
+  position: absolute;
+  top: 18px;
+  width: 17px;
+  height: 15px;
+}
+
+.profile-wrapper .profile {
+  position: relative;
+  left: 50px;
+  bottom: 20px;
+}
+
+.pre-header {
+  margin-left: 410px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  color: #EB5757;
+}
+
+.header {
+  margin-left: 410px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 69px;
+  color: #3F3631
+}
+
+.descr {
+  margin-left: 410px;
+  width: 495px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 145%;
+  color: #9C8E76;
+}
+
+.top {
+  margin-left: 410px;
+  margin-top: 50px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #828282;
+}
+
+.Mocha-Late, .iced-coffee, .caramel-frappe, .coffee-bag, .double-espresso {
+  position: relative;
+  margin-top: 250px;
+  transition: 0.2s linear;
+}
+
+.Mocha-Late:hover, .iced-coffee:hover, .caramel-frappe:hover, .coffee-bag:hover, .double-espresso:hover {
+  right: 2px;
+  box-shadow: 0 15px 15px -10px rgba(0,0,0, .5);
+}
+
+.Mocha-Late .Mocha-Late-img {
+  position: absolute;
+  width: 202px;
+  height: 302px;
+  bottom: 141px;
+  right: 0px;
+}
+
+.Mocha-Late .Mocha-Late-block, .iced-coffee-block, .caramel-frappe-block, .coffee-bag-block, .double-espresso-block{
+  width: 217px;
+  height: 259px;
+  background: #FFFFFF;
+  box-shadow: 2px 10px 40px rgba(45, 65, 102, 0.1);
+  border-radius: 10px;  
+}
+
+.Mocha-Late .Mocha-late-header, .iced-coffee-header, .caramel-frappe-header, .coffee-bag-header, .double-espresso-header {
+  position: relative;
+  top: 133px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #3F3631;
+}
+
+.Mocha-Late .Mocha-Late-descr, .iced-coffee-descr, .caramel-frappe-descr, .coffee-bag-descr, .double-espresso-descr{
+  position: relative;
+  margin: 0 auto;
+  top: 136px;
+  width: 189px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 145%;
+  text-align: center;
+  color: #9C8E76;
+}
+
+.packs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iced-coffee-img, .caramel-frappe-img, .coffee-bag-img, .double-espresso-img {
+  position: absolute;
+  width: 232px;
+  height: 312px;
+  bottom: 141px;
+  right: 0px;
+}
+
+.animated-head {
+  animation-duration: 1.5s;
+  animation-name: emersion;
+}
+
+@keyframes emersion {
+  from {
+    margin-left: -150px;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

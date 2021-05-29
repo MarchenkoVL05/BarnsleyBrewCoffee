@@ -30,6 +30,7 @@ html, body {
   justify-content: space-between;
   list-style-type: none;
   width: 525px;
+  height: 30px;
 }
 
 .menu-list a {
@@ -106,26 +107,30 @@ html, body {
   color: #828282;
 }
 
-.Mocha-Late, .iced-coffee, .caramel-frappe, .coffee-bag, .double-espresso {
+.mocha-late, .iced-coffee, .caramel-frappe, .coffee-bag, .double-espresso {
   position: relative;
   margin-top: 250px;
   transition: 0.2s linear;
 }
 
-.Mocha-Late:hover, .iced-coffee:hover, .caramel-frappe:hover, .coffee-bag:hover, .double-espresso:hover {
+.mocha-late:hover, .iced-coffee:hover, .caramel-frappe:hover, .coffee-bag:hover, .double-espresso:hover {
   right: 2px;
   box-shadow: 0 15px 15px -10px rgba(0,0,0, .5);
 }
 
-.Mocha-Late .Mocha-Late-img {
+.mocha-late-img {
   position: absolute;
-  width: 202px;
-  height: 302px;
+  width: 232px;
+  height: 312px;
   bottom: 141px;
   right: 0px;
 }
 
-.Mocha-Late .Mocha-Late-block, .iced-coffee-block, .caramel-frappe-block, .coffee-bag-block, .double-espresso-block{
+.mocha-late-img:hover {
+  cursor: pointer;
+}
+
+.pack-block {
   width: 217px;
   height: 259px;
   background: #FFFFFF;
@@ -133,7 +138,7 @@ html, body {
   border-radius: 10px;  
 }
 
-.Mocha-Late .Mocha-late-header, .iced-coffee-header, .caramel-frappe-header, .coffee-bag-header, .double-espresso-header {
+.pack-header {
   position: relative;
   top: 133px;
   font-family: 'Open Sans', sans-serif;
@@ -145,7 +150,7 @@ html, body {
   color: #3F3631;
 }
 
-.Mocha-Late .Mocha-Late-descr, .iced-coffee-descr, .caramel-frappe-descr, .coffee-bag-descr, .double-espresso-descr{
+.pack-descr {
   position: relative;
   margin: 0 auto;
   top: 136px;
@@ -159,17 +164,26 @@ html, body {
   color: #9C8E76;
 }
 
+.pack-price {
+  display: none;
+}
+
 .packs {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.iced-coffee-img, .caramel-frappe-img, .coffee-bag-img, .double-espresso-img {
+.pack-image {
   position: absolute;
   width: 232px;
   height: 312px;
   bottom: 141px;
   right: 0px;
+}
+
+.iced-coffee-img:hover, .caramel-frappe-img:hover, .coffee-bag-img:hover, .double-espresso-img:hover {
+cursor: pointer;
 }
 
 .animated-head {
@@ -187,6 +201,55 @@ html, body {
     opacity: 1;
   }
 }
+
+.active-block {
+  width: 287px;
+  height: 299px;
+}
+
+.active-img {
+  width: 272px;
+  height: 352px;
+  bottom: 171px;
+}
+
+.active-header {
+  font-size: 22px;
+}
+
+.active-descr {
+  top: 140px;
+  font-size: 14px;
+}
+
+.active-price {
+  display: block;
+  position: relative;
+  bottom: -145px;
+  right: -225px;
+  font-size: 14px;
+  color:#3F3631;
+}
+
+.smooth {
+  animation-name: smoothy-image;
+  animation-duration: 0.5s;
+}
+
+@keyframes smoothy-image {
+  from {
+    width: 232px;
+    height: 312px;
+  }
+  to {
+    width: 272px;
+    height: 352px;
+  }
+}
+
+
+
+
 
 
 

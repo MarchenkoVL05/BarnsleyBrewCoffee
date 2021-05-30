@@ -10,28 +10,28 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function hideCard() {
         blocks.forEach(block => {
-            block.classList.remove('active-block');
+            block.classList.remove('active-block', 'more-smooth');
            });
            images.forEach(image => {
             image.classList.remove('active-img', 'smooth');
            });
            headers.forEach(header => {
-            header.classList.remove('active-header');
+            header.classList.remove('active-header', 'header-increase');
            });
            descrs.forEach(descr => {
-            descr.classList.remove('active-descr');
+            descr.classList.remove('active-descr', 'descr-increase');
            });
            prices.forEach(price => {
-            price.classList.remove('active-price');
+            price.classList.remove('active-price', 'emerge');
            });
     }
 
     function showCard(i = 0) {
         images[i].classList.add('active-img', 'smooth');
-        blocks[i].classList.add('active-block');
-        headers[i].classList.add('active-header');
-        descrs[i].classList.add('active-descr');
-        prices[i].classList.add('active-price');
+        blocks[i].classList.add('active-block', 'more-smooth');
+        headers[i].classList.add('active-header', 'header-increase');
+        descrs[i].classList.add('active-descr', 'descr-increase');
+        prices[i].classList.add('active-price', 'emerge');
     }
 
     packs.addEventListener('click', (e) => {

@@ -5,6 +5,7 @@
 html, body {
     margin: 0; 
     padding: 0;
+    overflow-x: hidden;
   }
 
 .main-page {
@@ -218,6 +219,7 @@ cursor: pointer;
 }
 
 .active-descr {
+  width: 209px;
   top: 140px;
   font-size: 14px;
 }
@@ -233,7 +235,7 @@ cursor: pointer;
 
 .smooth {
   animation-name: smoothy-image;
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
 }
 
 @keyframes smoothy-image {
@@ -247,7 +249,65 @@ cursor: pointer;
   }
 }
 
+.more-smooth {
+  animation-name: smoothy-block;
+  animation-duration: 0.3s; 
+}
 
+@keyframes smoothy-block {
+  from {
+    width: 217px;
+    height: 259px;    
+  }
+  to {
+    width: 287px;
+    height: 299px;
+  }
+}
+
+.emerge {
+  animation-name: price-appearance;
+  animation-duration: 0.5s;
+}
+
+@keyframes price-appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header-increase {
+  animation-name: header-resizing;
+  animation-duration: 0.3s;
+}
+
+@keyframes header-resizing {
+  from{
+    font-size: 18px;
+  }
+  to {
+    font-size: 22px;
+  }
+}
+
+.descr-increase {
+  animation-name: descr-resizing;
+  animation-duration: 0.3s;
+}
+
+@keyframes descr-resizing {
+  from {
+    width: 189px;
+    font-size: 12px;
+  }
+  to {
+    font-size: 14px;
+    width: 209px;
+  }
+}
 
 
 
